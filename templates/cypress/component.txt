@@ -1,0 +1,13 @@
+// Cypress component test template
+import { mount } from '@cypress/react';
+import Component from './Component';
+
+describe('Component', () => {
+  it('renders correctly', () => {
+    // Arrange
+    mount(<Component />);
+    
+    // Assert
+    cy.contains(/example/i).should('be.visible');
+  });
+});

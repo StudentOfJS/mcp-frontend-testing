@@ -1,0 +1,11 @@
+// Jest unit test template
+describe('Unit test', () => {
+  test('should work correctly', () => {
+    // Arrange
+    
+    // Act
+    
+    // Assert
+    expect(true).toBe(true);
+  });
+});
