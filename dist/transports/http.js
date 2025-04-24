@@ -34,7 +34,8 @@ export async function startHttpServer(port) {
         const { sessionId } = req.params;
         const transport = transports.get(sessionId);
         if (!transport) {
-            return res.status(404).json({ error: 'Session not found' });
+            res.status(404).json({ error: 'Session not found' });
+            return;
         }
         await transport.handlePostMessage(req, res);
     });
