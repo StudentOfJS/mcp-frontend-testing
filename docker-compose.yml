@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  mcp-frontend-testing:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: mcp-frontend-testing
+    container_name: mcp-frontend-testing
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
