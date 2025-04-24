@@ -249,11 +249,11 @@ export async function executeTest(
   
   try {
     // Install dependencies
-    console.log('Installing dependencies...');
+    console.info('Installing dependencies...');
     await executeCommand('npm install --silent', testDir);
     
     // Run tests
-    console.log(`Running ${framework} ${type} tests...`);
+    console.info(`Running ${framework} ${type} tests...`);
     let result;
     if (framework === 'jest') {
       result = await executeCommand('npx jest --json', testDir);

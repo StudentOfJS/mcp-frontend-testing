@@ -1,5 +1,4 @@
-import { McpServer, ResourceTemplate } from '@modelcontextprotocol/sdk/server/mcp.js';
-import { z } from 'zod';
+import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 
 // Import resources
 import { registerTemplateResources } from './resources/templates.js';

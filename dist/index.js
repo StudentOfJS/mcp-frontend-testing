@@ -21,12 +21,12 @@ async function main() {
     const transport = values.transport;
     if (transport === 'stdio') {
         await startStdioServer();
-        console.log('Stdio server started');
+        // console.info('Stdio server started');
     }
     else if (transport === 'http') {
         const port = parseInt(values.port);
         await startHttpServer(port);
-        console.log(`HTTP server started on port ${port}`);
+        console.info(`HTTP server started on port ${port}`);
     }
     else {
         console.error(`Unknown transport: ${transport}`);
